@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a8c5f4">
+  <title>Medora — Learn medicine, clearly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Medora home"><span class="brand-mark">m</span><span>medora<span class="brand-dot">.</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#subjects">Explore</a>
+        <a class="nav-link" href="#continue">My learning</a>
+        <a class="nav-link" href="#educators">Educators</a>
+      </nav>
+      <div class="top-actions"><button class="icon-button" aria-label="Notifications">♧</button><button class="profile-chip"><span class="avatar">S</span><span class="profile-name">Student</span><span class="chevron">⌄</span></button><button class="mobile-menu" aria-label="Open menu">☰</button></div>
+    </header>
+
+    <main>
+      <section class="welcome-row">
+        <div><p class="eyebrow">YOUR MEDICAL LEARNING SPACE</p><h1>Good morning, future doctor<span class="sun">✳</span></h1><p class="muted intro">A little progress every day adds up. What will you learn today?</p></div>
+        <div class="date-pill"><span class="date-icon">◷</span><span>YOUR STUDY SPACE</span></div>
+      </section>
+
+      <section class="hero-grid" id="continue">
+        <article class="hero-card">
+          <div class="hero-copy">
+            <span class="mini-label light">PICK UP WHERE YOU LEFT OFF</span>
+            <h2>Small steps.<br>Stronger foundations.</h2>
+            <p>Keep your learning consistent, one concept at a time.</p>
+            <a class="button button-dark" href="lecture.html">Continue learning <span>↗</span></a>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="art-cross">✳</div><div class="art-circle"><span>✚</span></div>
+            <div class="floating-note note-a">✦ <span>Learn</span></div><div class="floating-note note-b">01 <span>Focus</span></div>
+          </div>
+          <div class="hero-count"><strong>01</strong><span>course in progress</span></div>
+        </article>
+        <article class="streak-card">
+          <div class="streak-top"><span class="streak-icon">✳</span><span class="mini-label">YOUR MOMENTUM</span><span class="streak-menu">•••</span></div>
+          <h3>Keep the streak alive</h3><p class="muted">Show up for yourself today.</p>
+          <div class="week-days"><div><span>M</span><i class="day-done">✓</i></div><div><span>T</span><i class="day-done">✓</i></div><div><span>W</span><i class="day-done">✓</i></div><div><span>T</span><i class="day-today">•</i></div><div><span>F</span><i></i></div><div><span>S</span><i></i></div><div><span>S</span><i></i></div></div>
+          <div class="streak-foot"><strong>3 days</strong><span class="muted">of learning this week</span></div>
+        </article>
+      </section>
+
+      <section class="section-block" id="subjects">
+        <div class="section-heading"><div><p class="eyebrow">BUILT FOR YOUR CURRICULUM</p><h2>Explore your subjects</h2><p class="muted">Organised around the MBBS journey, made for MUHS students.</p></div><a class="text-link" href="#all-subjects">View all subjects <span>↗</span></a></div>
+        <div class="filter-row"><div class="search-box"><span>⌕</span><input id="subjectSearch" type="search" placeholder="Search subjects or topics..." aria-label="Search subjects"></div><div class="filter-pills" role="group" aria-label="Filter by year"><button class="filter-pill selected" data-year="all">All years</button><button class="filter-pill" data-year="1">First year</button><button class="filter-pill" data-year="2">Second year</button><button class="filter-pill" data-year="3">Third year</button><button class="filter-pill" data-year="4">Final year</button></div></div>
+        <div class="subject-grid" id="all-subjects">
+          <a class="subject-card subject-anatomy" data-year="1" data-search="anatomy first year structure dissection" href="lecture.html"><div class="subject-card-top"><span class="subject-symbol">⌘</span><span class="card-arrow">↗</span></div><span class="subject-year">FIRST YEAR</span><h3>Anatomy</h3><p>Understand the structure of the human body.</p><div class="card-meta"><span>12 topics</span><span>•</span><span>8 practicals</span></div><div class="card-progress"><span style="width:35%"></span></div><div class="card-bottom"><span>Continue course</span><span>35%</span></div></a>
+          <a class="subject-card subject-physio" data-year="1" data-search="physiology first year function human body" href="lecture.html"><div class="subject-card-top"><span class="subject-symbol">〰</span><span class="card-arrow">↗</span></div><span class="subject-year">FIRST YEAR</span><h3>Physiology</h3><p>Discover how the body works, system by system.</p><div class="card-meta"><span>10 topics</span><span>•</span><span>6 practicals</span></div><div class="card-progress"><span style="width:0%"></span></div><div class="card-bottom"><span>Start learning</span><span>New</span></div></a>
+          <a class="subject-card subject-biochem" data-year="1" data-search="biochemistry first year metabolism" href="lecture.html"><div class="subject-card-top"><span class="subject-symbol">◉</span><span class="card-arrow">↗</span></div><span class="subject-year">FIRST YEAR</span><h3>Biochemistry</h3><p>The chemistry behind health and disease.</p><div class="card-meta"><span>9 topics</span><span>•</span><span>4 practicals</span></div><div class="card-progress"><span style="width:0%"></span></div><div class="card-bottom"><span>Start learning</span><span>New</span></div></a>
+          <a class="subject-card subject-path" data-year="2" data-search="pathology second year disease" href="lecture.html"><div class="subject-card-top"><span class="subject-symbol">✳</span><span class="card-arrow">↗</span></div><span class="subject-year">SECOND YEAR</span><h3>Pathology</h3><p>Connect mechanisms of disease to clinical findings.</p><div class="card-meta"><span>14 topics</span><span>•</span><span>5 practicals</span></div><div class="card-progress"><span style="width:0%"></span></div><div class="card-bottom"><span>Explore course</span><span>New</span></div></a>
+          <a class="subject-card subject-pharma" data-year="2" data-search="pharmacology second year drugs" href="lecture.html"><div class="subject-card-top"><span class="subject-symbol">◒</span><span class="card-arrow">↗</span></div><span class="subject-year">SECOND YEAR</span><h3>Pharmacology</h3><p>Learn medicines through mechanisms and clinical use.</p><div class="card-meta"><span>13 topics</span><span>•</span><span>4 practicals</span></div><div class="card-progress"><span style="width:0%"></span></div><div class="card-bottom"><span>Explore course</span><span>New</span></div></a>
+          <a class="subject-card subject-micro" data-year="2" data-search="microbiology second year microbes infection" href="lecture.html"><div class="subject-card-top"><span class="subject-symbol">❋</span><span class="card-arrow">↗</span></div><span class="subject-year">SECOND YEAR</span><h3>Microbiology</h3><p>Explore pathogens, immunity and infection control.</p><div class="card-meta"><span>11 topics</span><span>•</span><span>6 practicals</span></div><div class="card-progress"><span style="width:0%"></span></div><div class="card-bottom"><span>Explore course</span><span>New</span></div></a>
+        </div>
+        <p class="catalogue-note" id="catalogueNote">Showing a preview of the catalogue. The remaining subjects can be added to the same layout.</p>
+      </section>
+
+      <section class="educator-banner" id="educators"><div class="educator-mark">✦</div><div><p class="eyebrow">TEACH WITH US</p><h2>Good teaching deserves a wider classroom.</h2><p class="muted">Are you a doctor, professor or medical educator? Help students learn with clear, trusted lectures.</p></div><a class="button button-dark" href="mailto:educators@example.com?subject=Medora%20Educator%20Enquiry">Become an educator <span>↗</span></a></section>
+      <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">m</span><span>medora<span class="brand-dot">.</span></span></a><span>Made for medical learners, with care.</span><span>Free to learn · Always student-first</span></footer>
+    </main>
+  </div>
+  <script>
+    const search = document.querySelector('#subjectSearch');
+    const cards = [...document.querySelectorAll('.subject-card')];
+    let year = 'all';
+    function filterCards() {
+      const query = search.value.trim().toLowerCase();
+      cards.forEach(card => {
+        const matchesText = card.dataset.search.includes(query) || card.querySelector('h3').textContent.toLowerCase().includes(query);
+        const matchesYear = year === 'all' || card.dataset.year === year;
+        card.hidden = !(matchesText && matchesYear);
+      });
+    }
+    search.addEventListener('input', filterCards);
+    document.querySelectorAll('.filter-pill').forEach(button => button.addEventListener('click', () => {
+      document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('selected'));
+      button.classList.add('selected'); year = button.dataset.year; filterCards();
+    }));
+  </script>
+</body>
+</html>
