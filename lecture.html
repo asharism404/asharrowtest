@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a8c5f4">
+  <title>Pathology — Medora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+  <div class="lecture-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">m</span><span>medora<span class="brand-dot">.</span></span></a>
+      <nav class="main-nav"><a href="index.html">Explore</a><a class="active" href="#course">My learning</a><a href="#educator">Educators</a></nav>
+      <a class="back-link" href="index.html"><span>←</span> All subjects</a>
+    </header>
+    <main id="course">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="index.html#subjects">Subjects</a><span>/</span><strong>Pathology</strong></div>
+      <section class="course-heading">
+        <div><span class="course-tag"><span class="tag-dot"></span> SECOND YEAR MBBS</span><h1>Pathology<span class="title-period">.</span></h1><p class="muted">Understand disease from its foundations to its clinical presentation.</p><div class="course-facts"><span>◷ <b>14 topics</b></span><span>▤ <b>Lecture-based learning</b></span><span>✦ <b>MUHS-aligned structure</b></span></div></div>
+        <div class="course-progress"><div class="progress-ring"><span>0<small>%</small></span></div><div><strong>Your progress</strong><p class="muted">Start your first lecture to begin.</p></div></div>
+      </section>
+      <div class="learning-layout">
+        <section class="player-column">
+          <div class="video-card">
+            <div class="video-topline"><span class="live-dot"></span><span>NOW LEARNING</span><button class="save-button" id="saveLecture">♡ <span>Save lecture</span></button></div>
+            <div class="video-frame" id="videoFrame">
+              <div class="video-placeholder"><div class="play-emblem">▶</div><p class="placeholder-title">Your lecture starts here</p><p>Add an authorized Google Drive video ID to connect your lecture.</p><code>drive.google.com/file/d/FILE_ID/preview</code><button class="button button-dark" id="loadDemo">Preview sample player</button></div>
+            </div>
+            <div class="lecture-info"><div><span class="lesson-label">GENERAL PATHOLOGY · LESSON 01</span><h2>Cell injury and cellular adaptations</h2><p class="muted">An introduction to reversible injury, irreversible injury and cellular responses to stress.</p></div><span class="duration">◷ 24 min</span></div>
+            <div class="lecture-actions"><button class="action-button" id="markComplete">○ <span>Mark as complete</span></button><button class="action-button" id="shareLecture">↗ <span>Share lecture</span></button><button class="action-button" id="notesButton">▤ <span>Lecture notes</span></button></div>
+            <div class="notes-panel" id="notesPanel" hidden><strong>Lecture notes</strong><p>Use this area for a concise, educator-approved summary, key definitions and references. Add your notes link or text when publishing the lecture.</p></div>
+          </div>
+          <section class="educator-card" id="educator"><div class="educator-avatar">DR</div><div class="educator-copy"><span class="lesson-label">YOUR EDUCATOR</span><h3>Dr. Educator Name</h3><p class="muted">Medical educator · Pathology</p></div><span class="verified">✓ Verified educator</span></section>
+          <section class="about-card"><h3>About this course</h3><p class="muted">A structured learning space for core pathology concepts. Lectures are organized by topic to help you build understanding progressively. Always cross-check clinical decisions and exam requirements against current teaching and official guidance.</p><div class="about-tags"><span>Concept-first</span><span>Topic-wise</span><span>Student-friendly</span></div></section>
+        </section>
+        <aside class="playlist-card">
+          <div class="playlist-heading"><div><span class="lesson-label">COURSE CONTENTS</span><h2>General pathology</h2></div><span class="lesson-count">0 / 8</span></div>
+          <div class="playlist-progress"><span></span></div>
+          <div class="playlist-list">
+            <button class="playlist-item current" data-title="Cell injury and cellular adaptations" data-subtitle="An introduction to reversible injury, irreversible injury and cellular responses to stress." data-duration="24 min"><span class="lesson-number active-number">01</span><span class="lesson-text"><strong>Cell injury and adaptations</strong><small>Video lecture · 24 min</small></span><span class="lesson-status">▶</span></button>
+            <button class="playlist-item" data-title="Inflammation and repair" data-subtitle="Explore acute and chronic inflammation, chemical mediators and tissue repair." data-duration="32 min"><span class="lesson-number">02</span><span class="lesson-text"><strong>Inflammation and repair</strong><small>Video lecture · 32 min</small></span><span class="lesson-status">▶</span></button>
+            <button class="playlist-item" data-title="Haemodynamic disorders" data-subtitle="Understand oedema, thrombosis, embolism, infarction and shock." data-duration="28 min"><span class="lesson-number">03</span><span class="lesson-text"><strong>Haemodynamic disorders</strong><small>Video lecture · 28 min</small></span><span class="lesson-status">▶</span></button>
+            <button class="playlist-item" data-title="Genetic disorders" data-subtitle="An overview of the mechanisms and patterns of genetic disease." data-duration="26 min"><span class="lesson-number">04</span><span class="lesson-text"><strong>Genetic disorders</strong><small>Video lecture · 26 min</small></span><span class="lesson-status">▶</span></button>
+            <button class="playlist-item" data-title="Diseases of immunity" data-subtitle="Review hypersensitivity, autoimmunity and immunodeficiency." data-duration="30 min"><span class="lesson-number">05</span><span class="lesson-text"><strong>Diseases of immunity</strong><small>Video lecture · 30 min</small></span><span class="lesson-status">▶</span></button>
+            <button class="playlist-item" data-title="Neoplasia" data-subtitle="Learn the principles of tumour biology, nomenclature and spread." data-duration="35 min"><span class="lesson-number">06</span><span class="lesson-text"><strong>Neoplasia</strong><small>Video lecture · 35 min</small></span><span class="lesson-status">▶</span></button>
+            <button class="playlist-item" data-title="Infectious diseases" data-subtitle="Study tissue responses and pathological patterns associated with infection." data-duration="29 min"><span class="lesson-number">07</span><span class="lesson-text"><strong>Infectious diseases</strong><small>Video lecture · 29 min</small></span><span class="lesson-status">▶</span></button>
+            <button class="playlist-item" data-title="Environmental and nutritional pathology" data-subtitle="Review common patterns of environmental injury and nutritional disease." data-duration="22 min"><span class="lesson-number">08</span><span class="lesson-text"><strong>Environmental pathology</strong><small>Video lecture · 22 min</small></span><span class="lesson-status">▶</span></button>
+          </div>
+          <div class="playlist-footer"><span class="lock-symbol">✦</span><span>All published lectures are free for students.</span></div>
+        </aside>
+      </div>
+      <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">m</span><span>medora<span class="brand-dot">.</span></span></a><span>Made for medical learners, with care.</span><span>Free to learn · Always student-first</span></footer>
+    </main>
+  </div>
+  <script>
+    const items = [...document.querySelectorAll('.playlist-item')];
+    const title = document.querySelector('.lecture-info h2');
+    const desc = document.querySelector('.lecture-info .muted');
+    const duration = document.querySelector('.duration');
+    const complete = document.querySelector('#markComplete');
+    const frame = document.querySelector('#videoFrame');
+    let completed = new Set();
+    items.forEach((item, index) => item.addEventListener('click', () => {
+      items.forEach(el => el.classList.remove('current'));
+      item.classList.add('current');
+      title.textContent = item.dataset.title;
+      desc.textContent = item.dataset.subtitle;
+      duration.textContent = '◷ ' + item.dataset.duration;
+      complete.innerHTML = (completed.has(index) ? '✓ <span>Completed</span>' : '○ <span>Mark as complete</span>');
+    }));
+    complete.addEventListener('click', () => {
+      const index = items.findIndex(item => item.classList.contains('current'));
+      if (completed.has(index)) completed.delete(index); else completed.add(index);
+      complete.innerHTML = (completed.has(index) ? '✓ <span>Completed</span>' : '○ <span>Mark as complete</span>');
+      const percent = Math.round(completed.size / items.length * 100);
+      document.querySelector('.progress-ring span').innerHTML = percent + '<small>%</small>';
+      document.querySelector('.playlist-heading .lesson-count').textContent = completed.size + ' / ' + items.length;
+      document.querySelector('.playlist-progress span').style.width = percent + '%';
+    });
+    document.querySelector('#saveLecture').addEventListener('click', e => {
+      const btn = e.currentTarget; btn.classList.toggle('saved');
+      btn.innerHTML = btn.classList.contains('saved') ? '♥ <span>Saved</span>' : '♡ <span>Save lecture</span>';
+    });
+    document.querySelector('#notesButton').addEventListener('click', () => {
+      const panel = document.querySelector('#notesPanel'); panel.hidden = !panel.hidden;
+    });
+    document.querySelector('#shareLecture').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(location.href); alert('Lecture page link copied.'); }
+      catch { alert('Copy this page URL from your browser address bar to share it.'); }
+    });
+    document.querySelector('#loadDemo').addEventListener('click', () => {
+      const id = prompt('Paste the Google Drive file ID for an authorized lecture:');
+      if (!id || !/^[a-zA-Z0-9_-]+$/.test(id)) return;
+      frame.innerHTML = '<iframe class="drive-player" src="https://drive.google.com/file/d/' + encodeURIComponent(id) + '/preview" allow="autoplay; fullscreen" allowfullscreen title="Lecture video"></iframe>';
+    });
+  </script>
+</body>
+</html>
