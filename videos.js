@@ -149,7 +149,7 @@ window.ASHARCHIVES_VIDEOS = {
     "Uveitis": "",
     "Retinal disorders": "",
     "Red eye approach": "",
-    "Ophthalmology revision": "",
+    "Ophthalmology revision": "https://drive.google.com/file/d/1JG1NRbV953rppvStb_0KKsIEsvHJfK1_/view?usp=drivesdk",
   },
   // General Medicine
   "general-medicine": {
